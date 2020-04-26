@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center"> Survey Form</h1>
+            <p id="description" class="description text-center">Thank You for taking your time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label id="name-label" for="name">Name<span class="required">*</span></label>
+                <input type="text" name="name"  id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div id="form-group">
+                <label id="email-label" for="email">Email<span class="required">*</span></label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email id" required />
+            </div>
+            <div id="form-group">
+                <label id="number-label" for="age">Age<span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Which option describes your current role?<span class="required">*</span></p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">Would You recommend our services to a friend?</div>
+            <label >
+                <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked />
+                Definitely
+            </label>
+            <label >
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio" />
+                Maybe
+            </label>
+            <label >
+                <input type="radio" name="user-recommend" value="not-sure" class="input-radio" />
+                Not sure
+            </label>
+            <div id="form-group">
+                <p>What is your favorite feature of this website?</p>
+                <select name="mostLike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="design">Design</option>
+                    <option value="nav">Navigation</option>
+                    <option value="contact">Contact</option>
+                    <option value="content">content</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <p>If other , please write it below </p>
+                <textarea id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div id="form-group">
+                <p>Any commnets or suggestions?</p>
+                <textarea id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div id="form-group">
+                <button type="submit" id="submit" class="submit-button"> Submit</button>
+            </div>
+            <footer class="footer">* required values</footer>
+        </form>
+    </div>
+</html>
